@@ -161,7 +161,6 @@ function kmp_search(pattern, text) {
     
     while (s <= text.length - pattern.length) {
         steps.push( [s,i])
-        console.log([s,i, failure_func[i]])
         if(text[s+i] == pattern[i]) {
             i = i + 1;
             if (i == pattern.length) {
